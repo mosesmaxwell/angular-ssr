@@ -27,7 +27,7 @@ import { ItemComponent } from './item/item.component';
     ItemComponent
   ],
   imports: [
-    BrowserModule, NgbModule.forRoot(), AppRoutingModule, HttpModule
+    BrowserModule.withServerTransition({appId: 'ng2-poc'}), NgbModule.forRoot(), AppRoutingModule, HttpModule
   ],
   providers: [ResourceDataService, LogService],
   bootstrap: [AppComponent]
